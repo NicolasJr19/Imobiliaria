@@ -1,6 +1,8 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable react/jsx-no-undef */
 import React from "react";
 import { Container, Img, Itens, Description } from "./styles";
+import { FaArrowRight, FaMapMarkedAlt } from "react-icons/fa";
 
 const Card = () => {
   return (
@@ -14,9 +16,10 @@ const Card = () => {
       <Description>
         <h4>Apartamento</h4>
         <Itens>
-          <span></span>
+          <span><FaMapMarkedAlt/>Vila Buarque, São Paulo</span>
           <span>R$2.400,00 / mês</span>
         </Itens>
+        <a href="#">Detalhes <FaArrowRight/></a>
       </Description>
     </Container>
   );

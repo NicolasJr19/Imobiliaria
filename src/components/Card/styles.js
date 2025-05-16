@@ -4,7 +4,7 @@ export const Container = styled.div`
   width: 24%;
   margin-bottom: 12px;
   background-color: var(--white);
-  box-shadow: 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
 `;
 
 export const Img = styled.div`

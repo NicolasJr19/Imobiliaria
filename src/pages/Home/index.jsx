@@ -4,13 +4,17 @@ import { Header, Wrapper  } from "./styles";
 import Card from "../../components/Card";
 
 const Home = () => {
+  let Cards = []
+  for(let i=0;i<4;i++){
+    Cards.push(<Card key={i}/>)
+  }
   return (
     <Fragment>
         <Header>
             <h2>Find the property of your dreams!</h2>
         </Header>
         <Wrapper>
-            <Card/>
+          {Cards}
         </Wrapper>
     </Fragment>
   )

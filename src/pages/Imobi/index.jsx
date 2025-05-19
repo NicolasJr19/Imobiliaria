@@ -12,6 +12,11 @@ import {
   ProfileFormContact
 } from "./styles";
 import TopBanner from "../../components/TopBanner";
+import TextArea from "../../components/TextArea";
+import Input from "../../components/Input";
+import Button from "../../components/Button";
+
+
 
 const Imobi = () => {
   return (
@@ -55,10 +60,10 @@ const Imobi = () => {
             <ProfileFormContact>
               <h3>Contate o anunciante</h3>
               <form>
-                <input type="text" placeholder="Nome" name="" id=""/>
-                <input type="text" placeholder="E-mail " name="" id=""/>
-                <textarea placeholder="Mensagem" name="" id="" cols="30" rows="10"/>
-                <button>Enviar mensagem</button>
+                <Input type="text" placeholder="Nome" name="" id=""/>
+                <Input type="text" placeholder="E-mail" name="" id=""/>
+                <TextArea placeholder="Mensagem" name="" id="" cols="30" rows="10"/>
+                <Button>Enviar mensagem</Button>
               </form>
             </ProfileFormContact>
           </Profile>

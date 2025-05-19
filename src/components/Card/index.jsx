@@ -3,6 +3,7 @@
 import React from "react";
 import { Container, Img, Itens, Description } from "./styles";
 import { FaArrowRight, FaMapMarkedAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Card = () => {
   return (
@@ -19,7 +20,7 @@ const Card = () => {
           <span><FaMapMarkedAlt/>Vila Buarque, São Paulo</span>
           <span>R$2.400,00 / mês</span>
         </Itens>
-        <a href="#">Detalhes <FaArrowRight/></a>
+        <Link to="/imovel">Detalhes <FaArrowRight/></Link>
       </Description>
     </Container>
   );

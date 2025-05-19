@@ -3,6 +3,8 @@ import { FaFacebook, FaInstagram, FaTwitter, FaWhatsapp } from "react-icons/fa";
 import { Container, Copy, Item  } from "./styles";
 import LogoImg from "../../assets/logo.png"
 import { Fragment } from "react";
+import { Link } from "react-router-dom";
+
 
 
 const Footer = () => {
@@ -10,7 +12,7 @@ const Footer = () => {
     <Fragment>
         <Container>
             <Item>
-                <img src={LogoImg} alt=""/>
+                <Link to="/"><img src={LogoImg} alt=""/></Link>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
                 <nav>
                     <li><span><FaFacebook size={32}/></span></li>

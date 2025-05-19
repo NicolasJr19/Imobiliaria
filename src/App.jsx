@@ -1,21 +1,14 @@
-// import Banner from "./components/Banner";
-import Header from "./components/Header";
-import Global from "./Styles/Global"
-// import Home from "./pages/Home";
-import Footer from "./components/Footer";
-import Imobi from "./pages/Imobi";
+import React, { Fragment } from "react";
+import Global from "./Styles/Global";
+import RouterApp from "./routes";
 
-function App() {
-  return (
-    <div className="App">
-      <Header/>
-      <Imobi/>
-      {/* <Banner/>
-      <Home/> */}
-      <Footer/>
+function App(){
+  return(
+    <Fragment>
+      <RouterApp/>
       <Global/>
-    </div>
-  );
+    </Fragment>
+  )
 }
 
 export default App;
